@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(31, 31, 31);
+    height: auto;
+    width: auto;
+  }
+  
+  .twitter-timeline {
+    background-color: rgb(28, 31, 32);
+    color: aliceblue;
+    max-height: 270px;
+  }
+  .wrapper {
+    margin-top: 20px;
+  }
