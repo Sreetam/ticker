@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(31, 31, 31);
+    height: auto;
+    width: auto;
+}
+.top-margin {
+    margin-top: 22px;
+}
+.twitter-terminal {
+    margin-top: 20px;
+}
+.twitter-feed {
+    background-color: rgb(31, 31, 31);
+}
+.news-feed {
+    background-color: rgb(31, 31, 31);
+    height: 167px;
+    margin-top: 5px;
+}
+.weather-feed {
+    width: 308px;
+    height: auto;
+    margin-top: 35px;
+}
+.sat-img {
+    width: 152px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.sat-img-crop {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.wide-image-bin {
+    padding-top: 10px;
+    width: 100%;
+    height: 222px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.alignleft {
+    float: left;
+    margin-right: 2px;
+}
+.alignright {
+    float: right;
+    margin-left: 2px;
+}
