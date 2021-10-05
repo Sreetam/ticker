@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tickerstyle.css">
     <link rel='stylesheet' id='300-dark-css' href='./widget.css'>
 
     <script type="text/javascript">
@@ -12,7 +12,8 @@
             document.getElementById('refresh1').src = 'https://mausam.imd.gov.in/Satellite/3Dasiasec_ir1.jpg?rand=' + Math.random();
             document.getElementById('refresh2').src = 'https://mausam.imd.gov.in/Satellite/3Dglobe_ir1.jpg?rand=' + Math.random();
             document.getElementById('refresh3').src = 'https://mausam.imd.gov.in/Satellite/rsse_ir1.jpg?rand=' + Math.random();
-        }, 60000);
+            document.getElementById('refresh4').src = 'https://mausam.imd.gov.in/Satellite/rsse_wv.jpg?rand=' + Math.random();
+        }, 300000);
     </script>
 
     <title>XylexTicker</title>
@@ -41,15 +42,22 @@
                                 alt="Satellite feed: Bay of Bengal" />
                         </a>
                     </div>
+                    <div class="wide-image-bin">
+                        <a href="https://mausam.imd.gov.in/Satellite/rsse_wv.jpg" target="_blank">
+                            <img class="sat-img-crop" id="refresh4"
+                                src="https://mausam.imd.gov.in/Satellite/rsse_wv.jpg"
+                                alt="Satellite feed: Bay of Bengal" />
+                        </a>
+                    </div>
                 </div>
-                <div class=" left-rss card">
+                <!-- <div class=" left-rss card">
                     <div class="overflow">
                         <iframe width="263" height="210" src="https://www.youtube.com/embed/TpkRThMDClU"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="terminal top-margin twitter-pane m-3">
                 <div class="card-deck text-center m-0">
@@ -242,7 +250,7 @@
                                 if (nsec <= 9) nsec = "0" + nsec;
 
                                 var clocktext = "" + nhour + ":" + nmin + ":" + nsec + "";
-                                document.getElementById('california').innerHTML = clocktext + "<br> California";
+                                document.getElementById('california').innerHTML = clocktext + "<br> Los Angeles";
                             }
 
                             GetClock();
@@ -373,9 +381,8 @@
                     </div>
                 </div>
             </div>
-            <div class="stockticker stock-pane top-margin">
+            <!-- <div class="stockticker stock-pane top-margin">
                 <div class="det-container">
-                    <!-- TradingView Widget BEGIN -->
                     <div class="tradingview-widget-container">
                         <div class="tradingview-widget-container__widget"></div>
                         <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/indices/"
@@ -420,8 +427,7 @@
                                 }
                             </script>
                     </div>
-                    <!-- TradingView Widget END -->
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
